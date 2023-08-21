@@ -30,7 +30,7 @@ const IndexPage = () => {
           </a>
         </div>
       </div>
-      <div className="absolute bottom-0 w-full overflow-hidden">
+      <div className="absolute bottom-0 w-full overflow-hidden -z-10">
         <Waves />
       </div>
     </main>
