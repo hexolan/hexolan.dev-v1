@@ -19,18 +19,18 @@ const IndexPage = () => {
         </div>
 
         <div className="flex space-x-6 justify-items-center">
-          <a href={links.email} target="_blank" rel="noreferrer">
+          <a className="hover:text-blue-500" href={links.email} target="_blank" rel="noreferrer">
             <Send size={32} />
           </a>
-          <a href={links.github} target="_blank" rel="noreferrer">
+          <a className="hover:text-blue-500" href={links.github} target="_blank" rel="noreferrer">
             <GitHub size={32} />
           </a>
-          <a href={links.linkedIn} target="_blank" rel="noreferrer">
+          <a className="hover:text-blue-500" href={links.linkedIn} target="_blank" rel="noreferrer">
             <Linkedin size={32} />
           </a>
         </div>
       </div>
-      <div className="absolute bottom-0 w-full overflow-hidden">
+      <div className="absolute bottom-0 w-full overflow-hidden -z-10">
         <Waves />
       </div>
     </main>
