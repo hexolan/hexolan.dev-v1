@@ -14,8 +14,8 @@ const IndexPage = () => {
     <main>
       <div className="flex flex-col space-y-8 justify-center items-center min-h-screen">
         <div className="grid space-y-2 justify-items-center">
-          <p className="text-5xl text-neutral-400 font-sans">Declan Teevan</p>
-          <p className="text-2xl text-neutral-300 font-serif">Software Engineer</p>
+          <p className="text-5xl text-neutral-400">Declan Teevan</p>
+          <p className="text-2xl text-neutral-300">Software Engineer</p>
         </div>
 
         <div className="flex space-x-6 justify-items-center">
