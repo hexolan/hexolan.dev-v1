@@ -1,5 +1,8 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+
+import { Link } from "gatsby";
+
+import PageHead from "../components/PageHead";
 
 const NotFoundPage = () => {
   return (
@@ -10,6 +13,6 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default NotFoundPage;
 
-export const Head = () => <title>Hexolan | Not Found</title>
+export const Head = () => <PageHead titleExt="Not Found" />;

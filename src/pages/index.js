@@ -1,7 +1,9 @@
-import * as React from "react"
+import * as React from "react";
 
-import Waves from "../images/waves.svg";
 import { Send, GitHub, Linkedin } from 'react-feather';
+
+import PageHead from "../components/PageHead";
+import Waves from "../images/waves.svg";
 
 const links = {
   email: "mailto:hello@hexolan.dev",
@@ -19,14 +21,14 @@ const IndexPage = () => {
         </div>
 
         <div className="flex space-x-6 justify-items-center">
-          <a className="hover:text-blue-500" href={links.email} target="_blank" rel="noreferrer">
-            <Send size={32} />
+          <a className="hover:text-blue-500" href={links.email} target="_blank" rel="noreferrer" aria-label="Contact by email">
+            <Send size={32} alt="Email Icon" />
           </a>
-          <a className="hover:text-blue-500" href={links.github} target="_blank" rel="noreferrer">
-            <GitHub size={32} />
+          <a className="hover:text-blue-500" href={links.github} target="_blank" rel="noreferrer" aria-label="View GitHub">
+            <GitHub size={32} alt="GitHub Icon" />
           </a>
-          <a className="hover:text-blue-500" href={links.linkedIn} target="_blank" rel="noreferrer">
-            <Linkedin size={32} />
+          <a className="hover:text-blue-500" href={links.linkedIn} target="_blank" rel="noreferrer" aria-label="View LinkedIn">
+            <Linkedin size={32} alt="LinkedIn Icon" />
           </a>
         </div>
       </div>
@@ -37,6 +39,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>Hexolan</title>
+export const Head = () => <PageHead />;
