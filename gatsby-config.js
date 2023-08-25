@@ -4,7 +4,8 @@
 module.exports = {
   siteMetadata: {
     title: "Hexolan",
-    siteUrl: `https://hexolan.dev`
+    description: "Hexolan is a UK-based Software Engineer crafting digital solutions in a world increasingly fueled by technology.",
+    siteUrl: "https://hexolan.dev"
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -19,6 +20,17 @@ module.exports = {
         theme_color: "#282C5C",
         display: "standalone",
         icon: "src/images/icon.png"
+      }
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/"
+          }
+        ]
       }
     },
     {
