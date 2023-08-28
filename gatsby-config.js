@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: "Hexolan",
-    description: "Hexolan is a UK-based Software Engineer crafting digital solutions in a world increasingly fueled by technology.",
+    description: "Hexolan is a UK-based software engineer crafting digital solutions in a world increasingly fueled by technology.",
     siteUrl: "https://hexolan.dev"
   },
   plugins: [
@@ -17,7 +17,7 @@ module.exports = {
         short_name: "Hexolan",
         start_url: "/",
         background_color: "#0F172A",
-        theme_color: "#282C5C",
+        theme_color: "#0F172A",
         display: "standalone",
         icon: "src/images/icon.png"
       }

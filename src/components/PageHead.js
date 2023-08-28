@@ -9,6 +9,7 @@ const useConfigMetadata = () => {
         siteMetadata {
           title
           description
+          siteUrl
         }
       }
     }
@@ -18,13 +19,21 @@ const useConfigMetadata = () => {
 }
 
 const PageHead = ({titleExt}) => {
-  const { title, description } = useConfigMetadata();
+  const { title, description, siteUrl } = useConfigMetadata();
 
   return (
     <>
       <html lang="en" />
       <title>{title}{titleExt ? (" | " + titleExt) : null}</title>
       <meta name="description" content={description} />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": title,
+          "url": siteUrl
+        })}
+      </script>
     </>
   )
 }
